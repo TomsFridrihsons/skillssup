@@ -155,12 +155,11 @@ border: none;
 outline: none;
 }
   div .contact-info{
-    display: flex;
+    display: block;
     height: 50px;
     width: 75px;
     border: solid 1px black;
-    flex-direction: row;
-    
+
   }
 
 
