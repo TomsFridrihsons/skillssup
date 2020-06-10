@@ -156,8 +156,8 @@ outline: none;
 }
   div .contact-info{
     display: block;
-    height: 50px;
-    width: 75px;
+    height: auto;
+    width: auto;
     border: solid 1px black;
 
   }
