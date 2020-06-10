@@ -154,10 +154,14 @@ background:#1876b8;
 border: none;
 outline: none;
 }
-
-.blur-active{
-  filter:blur(3px);
-}
+  div .contact-info{
+    display: flex;
+    height: 50px;
+    width: 75px;
+    border: solid 1px black;
+    flex-direction: row;
+    
+  }
 
 
 
@@ -206,5 +210,9 @@ outline: none;
     resize: none;
   }
 
+  .blur-active{
+    filter:blur(3px);
+    transition: all 1s ease;
+  }
 
 }
