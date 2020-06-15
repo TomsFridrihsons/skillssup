@@ -2,14 +2,12 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat' sans-serif;
-  overflow: hidden;
-}
-.logo{
 
 }
 
-
-
+.viss{
+  height: 100%;
+}
 form{
   margin-top: 75px;
   /* height: 60vh; */
@@ -18,6 +16,7 @@ form{
   align-items: center;
   flex-direction: column;
   z-index: 999;
+
 }
 
 form .form1, .form2{
@@ -61,6 +60,7 @@ form label {
   height: 100%;
   pointer-events: none;
   border-bottom: 1px solid black;
+    overflow: hidden;
 }
 
 
@@ -160,9 +160,27 @@ outline: none;
     border: solid 1px black;
 
   }
+  .contactinfo{
+    width: 45vh;
+    height: 60vh;
+    background-color: #757575;
+  }
+  .contactinfo li{
+    align-items: center;
+    width: 250px;
+    height: 50px;
+  }
+  .contactinfo div {
+    height: 50px;
+    line-height: 50px;
 
-
-
+  }
+  .contactinfo img{
+    width: 50px;
+  }
+  .contactinfo p{
+    line-height: 50px;
+  }
 
 @media screen and (max-width:768px) {
 
