@@ -167,8 +167,7 @@ outline: none;
   }
   .contactinfo li{
     align-items: center;
-    width: 250px;
-    height: 50px;
+    height: auto;
   }
   .contactinfo div {
     height: 50px;
@@ -181,6 +180,12 @@ outline: none;
   .contactinfo p{
     line-height: 50px;
   }
+  .fa-instagram{
+    font-size: 25px;
+    color: black;
+
+  }
+
 
 @media screen and (max-width:768px) {
 

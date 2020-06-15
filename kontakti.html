@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="author" content="Toms Fridrihsons">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <script src="https://kit.fontawesome.com/30459e1049.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="nav.css">
@@ -42,18 +43,16 @@
   <div class="contactinfo">
     <div>
       <h2>Contact info</h2>
-      <ul>
+      <ul class="fa-ul">
+        <li><i class="fas fa-map-marker-alt"></i> Talsu novads</li>
         <li>
-          <div><img src="atteli/003-map.svg"><p>Talsu novads</p></div>
-        </li>
-        <li>
-          <span><img src="atteli/005-phone.svg"></span>
+          <span class="fas fa-phone-alt"></span>
           <span><a id="phone" href="tel:28447653">+371 28447653</a></span>
         </li>
       </ul>
-      <ul>
-        <li><a href="#"><img src="001-instagram.svg"></a></li>
-        <li><a href="#"><img src="002-facebook.svg"></a></li>
+      <ul class="fa-ul">
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 
       </ul>
     </div>
@@ -93,6 +92,32 @@
     </div> -->
 
   </div>
+  <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v7.0'
+            });
+          };
+
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+          attribution=setup_tool
+          page_id="110511197370592"
+    theme_color="#0CAD95"
+    logged_in_greeting="Sveiki! Vai varu kā palīdzēt?"
+    logged_out_greeting="Sveiki! Vai varu kā palīdzēt?">
+        </div>
   <footer></footer>
   <script src="app.js"></script>
 
