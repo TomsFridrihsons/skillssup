@@ -270,5 +270,8 @@ footer{
     filter:blur(3px);
     transition: all 1s ease;
   }
+  .fb-customerchat{
+    height: 50px;
+  }
 
 }
