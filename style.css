@@ -19,9 +19,9 @@ list-style-type: none;
 }
 .izst-logo{
   height: 250px;
-  justify-content: center;
-  align-items:center;
-  margin: 25px 375px;
+  display: flex;
+    margin: 10px auto;
+    justify-content: center;
 }
 .izstrade{
   color: #0CAD95;
