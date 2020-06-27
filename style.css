@@ -4,6 +4,32 @@
   font-family: 'Montserrat' sans-serif;
 list-style-type: none;
 }
+.isocial{
+  display: flex;
+    margin: 10px auto;
+    justify-content: center;
+}
+.isocial .fa-instagram{
+  font-size: 50px;
+  color: #111;
+}
+.isocial  .fa-facebook-f{
+  font-size: 50px;
+  color: #111;
+}
+.izst-logo{
+  height: 250px;
+  justify-content: center;
+  align-items:center;
+  margin: 25px 375px;
+}
+.izstrade{
+  color: #0CAD95;
+    justify-content: center;
+  text-align: center;
+  margin: 50px 100px;
+  margin-bottom: 0;
+}
 
 .viss{
   height: 100%;

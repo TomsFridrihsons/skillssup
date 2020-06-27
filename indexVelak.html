@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Toms Fridrihsons">
+       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="nav.css">
+
+    <title>SKILLS SUP</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img class="display-logo" src="atteli/skills-logo.svg" type="image" alt="SKILLS">
+        <h1>SKILLS SUP</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Sākums</a></li>
+          <li><a href="parMums.html">Par mums</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
+          <li><a href="kontakti.html">Kontakti</a></li>
+          <img class="mobil-logo" src="atteli/skills-logo.svg" type="image" alt="SKILLS">
+        </ul>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+  </header>
+  <div class="viss">
+    <p>čau</p>
+  </div>
+
+
+<!-- Messengeris -->
+
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="110511197370592"
+  theme_color="#0CAD95"
+  logged_in_greeting="Sveiki! Vai varu kā palīdzēt?"
+  logged_out_greeting="Sveiki! Vai varu kā palīdzēt?">
+      </div>
+
+<script src="app.js"></script>
+  </body>
+
+</html>
