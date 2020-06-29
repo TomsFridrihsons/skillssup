@@ -17,8 +17,6 @@
   color: rgb(256, 256, 256);
   letter-spacing: 2px;
   line-height: 60px;
-
-
 }
 
 nav {
@@ -40,7 +38,9 @@ nav {
 .mobil-logo{
   display: none;
 }
-
+.msocial{
+  display: none;
+}
 .nav-links li {
   list-style: none;
   text-decoration: none;
@@ -124,10 +124,12 @@ nav {
     margin-top: 25%;
     margin-bottom: 25%;
   }
+  .msocial{
+    display: flex;
+    color: #fff;
+  }
 
 }
-
-
 
 .nav-active {
   transform: translateX(0%);

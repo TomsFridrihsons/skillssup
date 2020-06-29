@@ -277,7 +277,6 @@ footer{
 
 
 @media screen and (max-width:768px) {
-
   .sazinies{
     font-size: 38px;
     text-align: center;
@@ -328,7 +327,6 @@ footer{
     height: 50px;
   }
   .row {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -357,6 +355,23 @@ footer{
     backface-visibility: hidden;
     transition: .7s ease-in-out;
     transform:perspective(1000px) rotateY(0deg);
+  }
+  .card h1{
+    text-align: center;
+  }
+  .fa-fingerprint{
+    font-size: 20px;
+    margin-top: -215px;
+    margin-right: -35px;
+  }
+  footer{
+    height: auto +15px;
+      padding-top: 45px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #184e68;
   }
 
 }
