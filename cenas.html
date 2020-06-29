@@ -1,14 +1,118 @@
 <!DOCTYPE html>
 <html lang="lv" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script src="https://kit.fontawesome.com/30459e1049.js" crossorigin="anonymous"></script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Toms Fridrihsons">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <script src="https://kit.fontawesome.com/30459e1049.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
   <title>SKILLS SUP</title>
   <link rel="icon" type="image/svg" href="atteli/skills-logo.svg">
 </head>
 
-  <body>
+<body>
 
-  </body>
-</html>
+  <header>
+    <nav>
+      <div class="logo">
+        <img class="display-logo" src="atteli/skills-logo.svg" type="image" alt="SKILLS">
+        <h1>SKILLS SUP</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Sākums</a></li>
+        <li><a href="parMums.html">Par mums</a></li>
+        <li><a href="cenas.html">Cenas</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="kontakti.html">Kontakti</a></li>
+
+        <img class="mobil-logo" src="atteli/skills-logo.svg" type="image" alt="SKILLS">
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+  </header>
+  <div class="viss">
+
+
+    <div class="row">
+      <div class="card">
+        <div class="card-face face-front">
+          <h1>Te priekša</h1>
+        </div>
+        <div class="card-face face-back">
+          <p>te aizmugure</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-face face-front">
+          <h1>Te priekša</h1>
+        </div>
+        <div class="card-face face-back">
+          <p>te aizmugure</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-face face-front">
+          <h1>Te priekša</h1>
+        </div>
+        <div class="card-face face-back">
+          <p>te aizmugure</p>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml: true,
+          version: 'v7.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="110511197370592" theme_color="#0CAD95" logged_in_greeting="Sveiki! Vai varu kā palīdzēt?" logged_out_greeting="Sveiki! Vai varu kā palīdzēt?">
+    </div>
+    <footer>
+      <div class="info">
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Talsu novads</li>
+          <li>
+            <span class="fas fa-phone-alt"></span>
+            <span><a id="phone" href="tel:28447653">+371 28447653</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul class="fa-ul">
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+      </div>
+
+    </footer>
+  </div>
+  <script src="app.js" </script>
+    < /body>
+
+    <
+    /html>

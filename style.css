@@ -180,6 +180,59 @@ background:#1876b8;
 border: none;
 outline: none;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.card{
+  position: relative;
+  margin-left: 25px;
+  width: 250px;
+  height: 300px;
+  /* border-radius: 8px;
+  background:linear-gradient(135deg, #184e68 0%,#57ca85 100%); */
+  transform-style: preserve-3d;
+}
+.card .card-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: .7s ease-in-out;
+  transform:perspective(1000px) rotateY(0deg);
+}
+
+.card .card-face.face-front{
+  /* background: linear-gradient(to right, #f7971e, #ffd200); */
+  background:linear-gradient(135deg, #184e68 0%,#57ca85 100%);
+  color: #fff;
+
+}
+
+.card .card-face.face-back{
+    /* background: linear-gradient(to right, #021b79, #0676e6); */
+    background:linear-gradient(315deg, #184e68 35%,#57ca85 100%);
+
+    color: #fff;
+    transform: perspective(1000px) rotateY(180deg);
+}
+.card:hover .face-front{
+  transform: perspective(1000px) rotateY(180deg);
+}
+.card:hover .face-back{
+  transform: perspective(1000px) rotateY(360deg);
+}
+
 footer{
   /* position: fixed; */
   height: 100px;
@@ -188,7 +241,7 @@ footer{
   bottom: 0;
   width: 100%;
   align-items: center;
-  background-color: #0CAD95;
+  background-color: #184e68;
 }
 .info{
  margin-left: 25px;
@@ -221,6 +274,7 @@ footer{
   font-size: 25px;
   margin-right: 10px;
 }
+
 
 @media screen and (max-width:768px) {
 
@@ -272,6 +326,37 @@ footer{
   }
   .fb-customerchat{
     height: 50px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .card{
+    position: relative;
+    margin-top: 25px;
+    width: 250px;
+    height: 300px;
+
+    transform-style: preserve-3d;
+  }
+  .card .card-face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: .7s ease-in-out;
+    transform:perspective(1000px) rotateY(0deg);
   }
 
 }
