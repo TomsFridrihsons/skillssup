@@ -374,5 +374,8 @@ footer{
     align-items: center;
     background-color: #184e68;
   }
+  .info{
+   margin-left: 50px;
+  }
 
 }
