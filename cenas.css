@@ -58,7 +58,9 @@ hr{
   font-size: 10px;
   font-weight: 400;
 }
-
+.phonebrake{
+  display: none;
+}
 .card .card-face.face-front{
   /* background: linear-gradient(to right, #f7971e, #ffd200); */
   background:linear-gradient(135deg, #184e68 0%,#57ca85 100%);
@@ -123,5 +125,8 @@ hr{
     font-size: 20px;
     margin-top: -230px;
     margin-right: -65px;
+  }
+  .phonebrake{
+    display: block;
   }
 }
