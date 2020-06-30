@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="lv" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Toms Fridrihsons">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-      <script src="https://kit.fontawesome.com/30459e1049.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg" href="atteli/skills-logo.svg">
-    <title>SKILLS SUP</title>
-  </head>
-  <body>
-    <div class="izstradeViss">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Toms Fridrihsons">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <script src="https://kit.fontawesome.com/30459e1049.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="izstrade.css">
+  <link rel="icon" type="image/svg" href="atteli/skills-logo.svg">
+  <title>SKILLS SUP</title>
+</head>
+
+<body>
+  <div class="izstradeViss">
 
 
     <img class="izst-logo" src="atteli/skills-logo.svg" alt="SKILLS logo">
-  <h1 class="izstrade">Čau, prieks, ka esi atradis mūsu mājaslapu, bet tā vēl ir izsrādes procesā.<br> Pagaidām vari ar mums sazināties šeit: </h1><br>
-  <div class="isocial">
-  <ul class="fa-ul">
-    <li><a href="https://www.instagram.com/skillssup/"target="_blank"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="https://www.facebook.com/skillssup" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-  </ul>
-      </div>
+    <h1 class="izstrade">Čau, prieks, ka esi atradis mūsu mājaslapu,<br> bet tā vēl ir izsrādes procesā.<br> Pagaidām vari ar mums sazināties šeit: </h1><br>
+    <div class="isocial">
+      <ul class="fa-ul">
+        <li><a href="https://www.instagram.com/skillssup/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/skillssup" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      </ul>
+    </div>
 
 
 
-      </div>
+  </div>
   <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              xfbml            : true,
-              version          : 'v7.0'
-            });
-          };
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml: true,
+        version: 'v7.0'
+      });
+    };
 
-          (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
-        <!-- Your Chat Plugin code -->
-        <div class="fb-customerchat"
-          attribution=setup_tool
-          page_id="110511197370592"
-    theme_color="#0CAD95"
-    logged_in_greeting="Sveiki! Vai varu kā palīdzēt?"
-    logged_out_greeting="Sveiki! Vai varu kā palīdzēt?">
-        </div>
-  </body>
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="110511197370592" theme_color="#0CAD95" logged_in_greeting="Sveiki! Vai varu kā palīdzēt?" logged_out_greeting="Sveiki! Vai varu kā palīdzēt?">
+  </div>
+</body>
+
 </html>
