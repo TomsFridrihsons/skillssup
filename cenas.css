@@ -37,8 +37,26 @@ list-style-type: none;
   transition: .7s ease-in-out;
   transform:perspective(1000px) rotateY(0deg);
 }
-h2{
+.card .face-front h2{
  text-align: center;
+}
+
+.card .face-back h2{
+  text-align: center;
+  letter-spacing: 1px;
+}
+hr{
+  width: 150px;
+  align-self: center;
+  margin: 2px auto;
+}
+.vnknesapratu{
+  font-size: 15px;
+  margin-top: 7px;
+}
+.vnknejauta{
+  font-size: 10px;
+  font-weight: 400;
 }
 
 .card .card-face.face-front{
@@ -96,9 +114,10 @@ h2{
     transition: .7s ease-in-out;
     transform:perspective(1000px) rotateY(0deg);
   }
-   h2{
+   .card .face-front h2{
     margin-right: 35px;
   }
+
   .fa-fingerprint{
     display: block;
     font-size: 20px;
