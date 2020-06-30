@@ -1,0 +1,189 @@
+form{
+  margin-top: 75px;
+  /* height: 60vh; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+
+}
+
+form .form1, .form2{
+  width: 25%;
+  position: relative;
+  height: 50px;
+
+}
+
+form .form3{
+  margin-top:15px;
+  width: 35%;
+  position: relative;
+  height: 90px;
+}
+
+
+form input{
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top:15px;
+  outline: none;
+  border:none;
+}
+form textarea{
+  width: 100%;
+  height: 85px;
+  color: #595f6e;
+  /* padding-top:15px; */
+  outline: none;
+  border:none;
+  resize: none;
+}
+
+form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+
+form label::after{
+  content: "";
+  position: absolute;
+  bottom:-1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #1876b8;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+
+}
+.content-name, .content-email{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+ .content-ta{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+
+
+}
+form input:focus + .label-name .content-name,
+ form input:valid + .label-name .content-name
+{
+
+   transform: translateY(-120%) scale(0.8);
+  color: #1876b8;
+
+}
+form input:focus + .label-email .content-email,
+ form input:valid + .label-email .content-email
+{
+
+   transform: translateY(-120%) scale(0.8);
+  color: #1876b8;
+
+}
+form textarea:focus + .label-ta .content-ta,
+ form textarea:valid + .label-ta .content-ta
+{
+
+   transform: translateY(-450%) scale(0.8);
+  color: #1876b8;
+
+
+}
+form input:focus + .label-name::after,
+ form input:valid + .label-name::after{
+   transform: translateX(0%);
+ }
+ form input:focus + .label-email::after,
+  form input:valid + .label-email::after{
+    transform: translateX(0%);
+  }
+  form textarea:focus + .label-ta::after,
+   form textarea:valid + .label-ta::after{
+     transform: translateX(0%);
+   }
+   form button{
+     text-align: center;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background: #fff;
+     padding: 8px 20px;
+     margin: 20px;
+     margin-bottom: 40px;
+     height: 40px;
+     width: auto;
+     cursor: pointer;
+     background: #0CAD95;
+     color: #fff;
+     font-size: 15px;
+     font-weight: 400;
+     border: none;
+     outline: none;
+     text-transform: capitalize;
+   border-radius: 10px;
+
+   }
+
+form button:hover{
+background:#1876b8;
+border: none;
+outline: none;
+}
+
+@media screen and (max-width:768px) {
+  .sazinies{
+    font-size: 38px;
+    text-align: center;
+    margin: 5%;
+  }
+
+  form{
+    margin-top: 35px;
+    height: 70vh;
+
+  }
+
+  form .form1, .form2{
+      width: 45%;
+    position: relative;
+    height: 50px;
+
+  }
+
+  form .form3{
+    margin-top:5px;
+      width: 75%;
+  }
+
+
+  form input{
+    height: 110%;
+    color: #595f6e;
+    padding-top:0px;
+    outline: none;
+    border:none;
+  }
+  form textarea{
+    width: 100%;
+    height: 85px;
+    color: #595f6e;
+    /* padding-top:15px; */
+    outline: none;
+    border:none;
+    resize: none;
+  }
