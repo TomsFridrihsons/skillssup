@@ -3,26 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Toms Fridrihsons">
+  <script src="https://kit.fontawesome.com/30459e1049.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-          <link rel="stylesheet" type="text/css" href="nav.css">
+  <link rel="stylesheet" type="text/css" href="viss.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <link rel="stylesheet" type="text/css" href="galerija.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="icon" type="image/svg" href="atteli/skills-logob.svg">
   <title>SKILLS SUP</title>
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">
-        <img class="display-logo" src="atteli/skills-logob.svg" type="image" alt="SKILLS">
-        <link rel="icon" type="image/svg" href="atteli/skills-logo.svg">
-        <h1>SKILLS SUP</h1>
+        <img class="display-logo" src="atteli/skills-logow.svg" type="image" alt="SKILLS">
+
+        <h1>SKILLS<br>SUP</h1>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Sākums</a></li>
-        <li><a href="parMums.html">Par mums</a></li>
         <li><a href="cenas.html">Cenas</a></li>
         <li><a href="galerija.html">Galerija</a></li>
         <li><a href="kontakti.html">Kontakti</a></li>
-        <img class="mobil-logo" src="atteli/skills-logo.svg" type="image" alt="SKILLS">
+        <img class="mobil-logo" src="atteli/skills-logow.svg" type="image" alt="SKILLS">
       </ul>
 
       <div class="burger">
@@ -33,8 +36,61 @@
     </nav>
 
 </header>
+<div class="viss">
+<div class="row">
 
+<div class="row3"></div>
+<div class="galerija"></div>
+<div class="galerija"></div>
+<div class="galerija"></div>
+</div>
+<div class="row2">
+<div class="galerija"></div>
+<div class="galerija"></div>
+<div class="galerija"></div>
+</div>
+<div class="row3">
+<div class="galerija"></div>
+<div class="galerija"></div>
+<div class="galerija"></div>
+</div>
+<!-- <div class="gallery-section">
+  <div class="inner-width">
+    <h1>My Gallery</h1>
+    <div class="border"></div>
+    <div class="gallery">
+      <div class="img">
 
+      </div>
+      <div class="img">
+        <a href="img/1.png" class="image">
+          <img src="img/1.png" alt="">
+        </a>
+      </div>
+      <div class="img">
+        <a href="img/1.png" class="image">
+          <img src="img/1.png" alt="">
+        </a>
+      </div>
+      <div class="img">
+        <a href="img/1.png" class="image">
+          <img src="img/1.png" alt="">
+        </a>
+      </div>
+      <div class="img">
+        <a href="img/1.png" class="image">
+          <img src="img/1.png" alt="">
+        </a>
+      </div>
+      <div class="img">
+        <a href="img/1.png" class="image">
+          <img src="img/1.png" alt="">
+        </a>
+      </div>
+
+    </div>
+  </div>-->
+</div>
 <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
@@ -61,7 +117,33 @@
   logged_in_greeting="Sveiki! Vai varu kā palīdzēt?"
   logged_out_greeting="Sveiki! Vai varu kā palīdzēt?">
       </div>
+      <footer>
+         <div class="info">
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Talsu novads</li>
+            <li>
+              <span class="fas fa-phone-alt"></span>
+              <span><a id="phone" href="tel:28447653">+371 28447653</a></span>
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+        <ul class="fa-ul">
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+            </div>
+      </footer>
+    </div>
 <script src="app.js"></script>
-
+<script>
+  $(".gallery").magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery:{
+      enabled: true
+    }
+  });
+</script>
   </body>
 </html>

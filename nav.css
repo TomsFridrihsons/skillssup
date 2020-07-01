@@ -53,15 +53,10 @@ nav {
 .nav-links a {
   color: rgb(256, 256, 256);
   text-decoration: none;
-
   font-size: 14px;
   text-align: right;
   cursor: pointer;
-
 }
-
-
-
 .burger {
   display: none;
   cursor: pointer;
@@ -103,9 +98,10 @@ nav {
     text-align: center;
     top: 60px;
     background-color: #39bb6d;
-    width: 65%;
+    width: 45%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+
   }
   .nav-links a {
     font-size: 20px;
@@ -146,7 +142,6 @@ nav {
 .nav-active {
   transform: translateX(0%);
   animation: 0.5s;
-
 }
 
 
@@ -162,14 +157,14 @@ nav {
   }
 }
 
-.toggle .line1 {
+.active .line1 {
   transform: rotate(-45deg) translate(-5px, 5px);
 }
 
-.toggle .line2 {
+.active .line2 {
   opacity: 0;
 }
 
-.toggle .line3 {
+.active .line3 {
   transform: rotate(45deg) translate(-5px, -5px);
 }
